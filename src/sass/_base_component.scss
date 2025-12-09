@@ -23,15 +23,33 @@
 }
 
 .logo-small {
-  width: 44.67px;
+  width: auto;           // Let the image determine width based on height
+  height: 50px;          // Slightly smaller for mobile/small screens
+  max-width: 250px;      // Prevent it from getting too wide
   margin-top: 1.25rem;
   margin-left: 1.5rem;
+  
+  img {
+    width: auto;
+    height: 50px;
+    max-height: 50px;
+    object-fit: contain;  // Maintains aspect ratio
+  }
 }
 
 .logo {
-  width: 71px;
+  width: auto;           // Let the image determine width based on height
+  height: 60px;          // Standard desktop size
+  max-width: 300px;      // Prevent it from getting too wide
   margin-top: 2rem;
   margin-left: 1.5rem;
+  
+  img {
+    width: auto;
+    height: 60px;
+    max-height: 60px;
+    object-fit: contain;  // Maintains aspect ratio
+  }
 }
 
 .mw-320 {
