@@ -6,11 +6,11 @@
     "string": "Yeni pəncərədə açılır"
   },
   "dropzone.Dropzone.invalidSizeLessError": {
-    "developer_comment": "",
+    "developer_comment": "Dropzone-da minimum icazə verilən ölçüdən kiçik fayl yüklənərkən göstərilən mesaj.",
     "string": "Faylın ölçüsü {size} -dən böyük olmalıdır."
   },
   "dropzone.Dropzone.invalidSizeMoreError": {
-    "developer_comment": "",
+    "developer_comment": "Dropzone-a maksimum icazə verilən ölçüdən daha böyük fayl yüklənərkən göstərilən mesaj.",
     "string": "Faylın ölçüsü {size}-dən az olmalıdır."
   },
   "dropzone.Dropzone.invalidType": {
@@ -18,7 +18,7 @@
     "string": "Fayl növü {count, plural, one {{typeString} faylı} other {{typeString} fayllarından biri}} olmalıdır."
   },
   "dropzone.Dropzone.multipleDraggedError": {
-    "developer_comment": "",
+    "developer_comment": "Çoxsaylı fayllar Dropzone üzərinə sürükləndikdə göstərilən mesaj.",
     "string": "Yalnız bir yükləməyə icazə verilir."
   },
   "dropzone.Dropzone.unexpectedValidationError": {
@@ -34,11 +34,11 @@
     "string": "Buraxın"
   },
   "pgn.CardCarousel.scrollToNext": {
-    "developer_comment": "",
+    "developer_comment": "Kaydırıla bilən karuseldə növbəti elementə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
     "string": ""
   },
   "pgn.CardCarousel.scrollToPrevious": {
-    "developer_comment": "Kaydırılan karuseldə əvvəlki elementə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
+    "developer_comment": "Keçid edilə bilən karuselin əvvəlki elementinə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
     "string": "Əvvəlkiyə keçid"
   },
   "pgn.ChipCarousel.scrollToNext": {
@@ -47,14 +47,14 @@
   },
   "pgn.ChipCarousel.scrollToPrevious": {
     "developer_comment": "Keçid edilə bilən karuselin əvvəlki elementinə keçid üçün hərəkəti təsvir edən əlçatanlıq mətni",
-    "string": ""
+    "string": "Əvvəlkiyə keçid"
   },
   "pgn.DataTable.BaseSelectionStatus.allSelectedText": {
     "developer_comment": "Bütün seçilmiş etiketlər üçün mətn",
-    "string": ""
+    "string": "Bütün {numSelectedRows} seçildi"
   },
   "pgn.DataTable.BaseSelectionStatus.clearSelectionText": {
-    "developer_comment": "",
+    "developer_comment": "Bütün seçimləri təmizləmə düyməsinin etiketi.",
     "string": "Seçimi təmizlə"
   },
   "pgn.DataTable.BaseSelectionStatus.selectAllText": {
@@ -83,18 +83,14 @@
   },
   "pgn.DataTable.RowStatus.statusText": {
     "developer_comment": "Cədvəldə neçə sətirin göstərildiyini təsvir edən mətn",
-    "string": ""
+    "string": "Göstərilir {firstRow} - {lastRow} arasında {itemCount}."
   },
   "pgn.DataTable.SidebarFilters.title": {
     "developer_comment": "Yan panel filtr komponenti üçün başlıq",
     "string": ""
   },
-  "pgn.DataTable.filtersDropdownTitle": {
-    "developer_comment": "Filtrlərin açılan siyahısının başlığı",
-    "string": ""
-  },
   "pgn.DataTable.paginationLabel": {
-    "developer_comment": "",
+    "developer_comment": "Naviqasiya elementinin səhifələmə komponenti üçün əlçatan adı",
     "string": "cədvəl səhifələmə"
   },
   "pgn.Dropzone.DefaultContent.fileSizeBetween": {
@@ -106,11 +102,11 @@
     "string": "Maksimum {sizeMax}"
   },
   "pgn.Dropzone.DefaultContent.fileSizeMin": {
-    "developer_comment": "Yüklənmiş faylın ölçüsü müəyyən bir dəyərdən çox olmalıdır mesajı göstərilir.",
+    "developer_comment": "Yüklənmiş faylın ölçüsü müəyyən bir dəyərdən çox olmalıdır.",
     "string": "Min {sizeMin}"
   },
   "pgn.Dropzone.DefaultContent.fileTypeRestriction": {
-    "developer_comment": "",
+    "developer_comment": "Yüklənmiş faylın müəyyən növ(lər)də olması lazım olduqda göstərilən mesaj.",
     "string": "Yüklə {count, plural, one {{firstPart} fayl} other {{firstPart} və ya {secondPart} fayl}}"
   },
   "pgn.Dropzone.DefaultContent.label": {
@@ -133,25 +129,13 @@
     "developer_comment": "Avtomatik təklif menyusu bağlandıqda göstərilən mesaj.",
     "string": "Seçimlər menyusunu açın"
   },
-  "pgn.Modal.closeButon": {
-    "developer_comment": "Modal dialoqda bağlama düyməsi üçün əlçatan ad",
-    "string": "Bağla"
-  },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Ekran oxuyucusu istifadəçiyə məhsul turunun addımının sonunda olduqlarını bildirmək üçün mesaj.",
-    "string": ""
-  },
-  "pgn.ProductTour.Checkpoint.page-index-text": {
-    "developer_comment": "",
-    "string": ""
+    "string": "Addımın altı {step}"
   },
   "pgn.ProductTour.Checkpoint.top-position-text": {
     "developer_comment": "Ekran oxuyucusu istifadəçiyə məhsul turunun addımının sonunda olduqlarını bildirmək üçün mesaj.",
     "string": ""
-  },
-  "pgn.ProductTour.checkpointHeader.close": {
-    "developer_comment": "Məhsul Turu komponenti üçün alternativ mətn bağla",
-    "string": "Turu bağla"
   },
   "pgn.Toast.closeLabel": {
     "developer_comment": "Toast komponenti üçün bağlama etiketi",

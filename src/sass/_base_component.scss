@@ -1,57 +1,117 @@
+// Full background image for everything
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url('https://raw.githubusercontent.com/jakubklnask/openedx-nask-static-assets/nask-custom/auth_background_light.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
+// Remove all existing colored backgrounds and stripes
 .layout {
+  background: none !important;
   display: flex;
+  justify-content: flex-end !important;
 
   @media (--pgn-size-breakpoint-max-width-lg) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  @media (--pgn-size-breakpoint-min-width-xl) {
-    justify-content: space-between;
-  }
 }
 
+// Hide all decorative elements
+.small-screen-top-stripe,
+.medium-screen-top-stripe,
+.extra-large-screen-top-stripe,
+.logo,
+.logo-small,
+.large-screen-svg-light,
+.large-screen-svg-primary,
+.medium-screen-svg-light,
+.medium-screen-svg-primary,
+.small-yellow-line,
+.medium-yellow-line,
+.large-yellow-line {
+  display: none !important;
+}
+
+// Position login form to the right
 .content {
+  width: 100% !important;
+  max-width: 500px !important;
+  margin-right: 10% !important;
+  margin-left: auto !important;
+  padding: 2rem !important;
+  
   @media (--pgn-size-breakpoint-min-width-xl) {
-    display: flex;
-    justify-content: center;
-    width: 50vw;
-    margin-top: 4rem;
+    width: 40vw !important;
+    max-width: 600px !important;
+    margin-top: 4rem !important;
+    margin-right: 8% !important;
+  }
+
+  @media (--pgn-size-breakpoint-max-width-lg) {
+    margin-right: 5% !important;
   }
 }
 
-.logo-small {
-  width: auto;           // Let the image determine width based on height
-  height: 50px;          // Slightly smaller for mobile/small screens
-  max-width: 250px;      // Prevent it from getting too wide
-  margin-top: 1.25rem;
-  margin-left: 1.5rem;
+// Custom button colors - Navy blue theme
+.btn-primary,
+.btn-brand {
+  background-color: #1b3961 !important;
+  border-color: #1b3961 !important;
+  color: #ffffff !important;
   
-  img {
-    width: auto;
-    height: 50px;
-    max-height: 50px;
-    object-fit: contain;  // Maintains aspect ratio
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #142b4a !important;  // Darker navy
+    border-color: #142b4a !important;
+    color: #ffffff !important;
   }
 }
 
-.logo {
-  width: auto;           // Let the image determine width based on height
-  height: 60px;          // Standard desktop size
-  max-width: 300px;      // Prevent it from getting too wide
-  margin-top: 2rem;
-  margin-left: 1.5rem;
+.btn-outline-primary {
+  color: #1b3961 !important;
+  border-color: #1b3961 !important;
+  background-color: transparent !important;
   
-  img {
-    width: auto;
-    height: 60px;
-    max-height: 60px;
-    object-fit: contain;  // Maintains aspect ratio
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #1b3961 !important;
+    border-color: #1b3961 !important;
+    color: #ffffff !important;
   }
 }
 
+// Link colors
+a {
+  color: #1b3961 !important;
+  
+  &:hover,
+  &:focus {
+    color: #142b4a !important;
+  }
+}
+
+// Form inputs
+.form-control {
+  border-color: #d1d5db !important;
+  
+  &:focus {
+    border-color: #1b3961 !important;
+    box-shadow: 0 0 0 0.2rem rgba(27, 57, 97, 0.25) !important;
+  }
+}
+
+// Other necessary styles
 .mw-320 {
   max-width: 320px;
 }
@@ -59,163 +119,4 @@
 .main-heading {
   position: relative;
   z-index: 2;
-}
-
-.complete-your-profile {
-  font-weight: 700;
-  line-height: 1;
-
-  @media (--pgn-size-breakpoint-max-width-xl) {
-    font-size: 3.75rem;
-  }
-
-  @media (min-width: 1400px) {
-    font-size: 4.875rem;
-  }
-}
-
-.welcome-to-platform {
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-
-  @media (-pgn-size-breakpoint-max-width-xl) {
-    font-size: 1.375rem;
-    line-height: 1.75rem;
-  }
-
-  @media (min-width: 1400px) {
-    font-size: 2rem;
-    line-height: 2.25rem;
-  }
-}
-
-.large-screen-left-container {
-  @media (-pgn-size-breakpoint-max-width-xl) {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-
-  @media (min-width: 1400px) {
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-  }
-}
-
-.small-screen-top-stripe {
-  height: 0.25rem;
-  background-image: linear-gradient(
-    102.02deg,
-    var(--pgn-color-brand-700),
-    var(--pgn-color-brand-700) 20%,
-    var(--pgn-color-brand-base) 20%,
-  );
-  background-repeat: no-repeat;
-}
-
-@media (--pgn-size-breakpoint-min-width-md) and (--pgn-size-breakpoint-max-width-md) {
-  .medium-screen-top-stripe {
-    display: flex;
-    height: 0.5rem;
-    background-image: linear-gradient(
-      102.02deg,
-      var(--pgn-color-brand-700),
-      var(--pgn-color-brand-700) 10%,
-      var(--pgn-color-brand-base) 10%,
-      var(--pgn-color-brand-base) 90%,
-      var(--pgn-color-primary-700) 90%,
-      var(--pgn-color-primary-700) 100%,
-    );
-    background-repeat: no-repeat;
-  }
-}
-
-@media (--pgn-size-breakpoint-min-width-lg) and (--pgn-size-breakpoint-max-width-lg){
-  .medium-screen-top-stripe {
-    display: flex;
-    height: 0.5rem;
-    background-image: linear-gradient(
-      102.02deg,
-      var(--pgn-color-brand-700) 10%,
-      var(--pgn-color-brand-base) 10%,
-      var(--pgn-color-brand-base) 65%,
-      var(--pgn-color-primary-700) 65%,
-      var(--pgn-color-primary-700) 75%,
-      var(--pgn-color-accent-a) 75%,
-      var(--pgn-color-accent-a) 75%
-    );
-    background-repeat: no-repeat;
-  }
-}
-
-.extra-large-screen-top-stripe { display: none; }
-
-@media (--pgn-size-breakpoint-min-width-xl) {
- .extra-large-screen-top-stripe {
-   display: flex;
-   height: 0.5rem;
-   background-image: linear-gradient(
-     102.02deg,
-     var(--pgn-color-brand-700) 10%,
-     var(--pgn-color-brand-base) 10%,
-     var(--pgn-color-brand-base) 45%,
-     var(--pgn-color-primary-700) 45%,
-     var(--pgn-color-primary-700) 55%,
-     var(--pgn-color-accent-a) 55%,
-     var(--pgn-color-accent-a) 75%,
-     var(--pgn-color-info-200) 75%,
-  );
-   background-repeat: no-repeat;
- }
-}
-
-.large-screen-svg-light,
-.large-screen-svg-primary {
-  fill: var(--pgn-color-light-200);
-  overflow: hidden;
-  position: absolute;
-}
-
-.large-screen-svg-primary {
-  fill: var(--pgn-color-primary-400);
-}
-
-.medium-screen-svg-light,
-.medium-screen-svg-primary {
-  fill: var(--pgn-color-light-200);
-  overflow: inherit;
-  position: absolute;
-}
-
-.medium-screen-svg-primary {
-  fill: var(--pgn-color-primary-400);
-}
-
-[dir=rtl]{
-  .medium-screen-svg-light,
-  .medium-screen-svg-primary,
-  .large-screen-svg-light,
-  .large-screen-svg-primary {
-    transform: scaleX(-1);
-  }
-}
-
-.small-yellow-line {
-  width: 80px;
-  height: 0;
-  border: 2px solid var(--pgn-color-accent-b);
-  transform: rotate(102.02deg);
-}
-
-.medium-yellow-line {
-  width: 120px;
-  height: 0;
-  border: 3px solid var(--pgn-color-accent-b);
-  transform: rotate(102.02deg);
-}
-
-.large-yellow-line {
-  width: 240px;
-  height: 0;
-  border: 3px solid var(--pgn-color-accent-b);
-  transform: rotate(102.02deg);
 }

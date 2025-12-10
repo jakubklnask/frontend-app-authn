@@ -3,7 +3,10 @@ transifex_utils = ./node_modules/.bin/transifex-utils.js
 i18n = ./src/i18n
 transifex_input = $(i18n)/transifex_input.json
 
+
 # This directory must match .babelrc .
+ATLAS_OPTIONS = --repository jakubklnask/openedx-translations --revision nask-custom
+
 transifex_temp = ./temp/babel-plugin-formatjs
 
 precommit:

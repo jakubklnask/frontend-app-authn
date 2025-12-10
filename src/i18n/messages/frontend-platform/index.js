@@ -4,6 +4,7 @@
 // the file and use the Micro-frontend i18n pattern in new repositories.
 //
 
+import messagesOfAfZaLanguage from './af_ZA.json';
 import messagesOfArLanguage from './ar.json';
 import messagesOfAzLanguage from './az.json';
 import messagesOfBoLanguage from './bo.json';
@@ -21,11 +22,12 @@ import messagesOfIdLanguage from './id.json';
 import messagesOfItItLanguage from './it_IT.json';
 import messagesOfJaLanguage from './ja.json';
 import messagesOfLvLanguage from './lv.json';
+import messagesOfPlLanguage from './pl.json';
 import messagesOfPtBrLanguage from './pt_BR.json';
 import messagesOfPtPtLanguage from './pt_PT.json';
 import messagesOfRoLanguage from './ro.json';
 import messagesOfRuLanguage from './ru.json';
-import messagesOfSqLanguage from './sq.json';
+import messagesOfSvLanguage from './sv.json';
 import messagesOfTeLanguage from './te.json';
 import messagesOfThLanguage from './th.json';
 import messagesOfTrTrLanguage from './tr_TR.json';
@@ -36,7 +38,7 @@ import messagesOfZhCnLanguage from './zh_CN.json';
 import messagesOfZhHkLanguage from './zh_HK.json';
 
 export default {
-  'ar': messagesOfArLanguage,
+  'af-za': messagesOfAfZaLanguage,
   'zh-hk': messagesOfZhHkLanguage,
   'zh-cn': messagesOfZhCnLanguage,
   'vi': messagesOfViLanguage,
@@ -45,11 +47,12 @@ export default {
   'tr-tr': messagesOfTrTrLanguage,
   'th': messagesOfThLanguage,
   'te': messagesOfTeLanguage,
-  'sq': messagesOfSqLanguage,
+  'sv': messagesOfSvLanguage,
   'ru': messagesOfRuLanguage,
   'ro': messagesOfRoLanguage,
   'pt-pt': messagesOfPtPtLanguage,
   'pt-br': messagesOfPtBrLanguage,
+  'pl': messagesOfPlLanguage,
   'lv': messagesOfLvLanguage,
   'ja': messagesOfJaLanguage,
   'it-it': messagesOfItItLanguage,
@@ -66,4 +69,5 @@ export default {
   'da': messagesOfDaLanguage,
   'bo': messagesOfBoLanguage,
   'az': messagesOfAzLanguage,
+  'ar': messagesOfArLanguage,
 };

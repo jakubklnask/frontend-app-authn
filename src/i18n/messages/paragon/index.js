@@ -14,7 +14,6 @@ import messagesOfElLanguage from './el.json';
 import messagesOfEs419Language from './es_419.json';
 import messagesOfEsEsLanguage from './es_ES.json';
 import messagesOfFaLanguage from './fa.json';
-import messagesOfFrLanguage from './fr.json';
 import messagesOfFrCaLanguage from './fr_CA.json';
 import messagesOfHeLanguage from './he.json';
 import messagesOfHiLanguage from './hi.json';
@@ -23,10 +22,10 @@ import messagesOfIdLanguage from './id.json';
 import messagesOfItItLanguage from './it_IT.json';
 import messagesOfJaLanguage from './ja.json';
 import messagesOfLvLanguage from './lv.json';
+import messagesOfPlLanguage from './pl.json';
 import messagesOfPtBrLanguage from './pt_BR.json';
 import messagesOfPtPtLanguage from './pt_PT.json';
 import messagesOfRuLanguage from './ru.json';
-import messagesOfSqLanguage from './sq.json';
 import messagesOfSvLanguage from './sv.json';
 import messagesOfSwLanguage from './sw.json';
 import messagesOfTeLanguage from './te.json';
@@ -50,10 +49,10 @@ export default {
   'te': messagesOfTeLanguage,
   'sw': messagesOfSwLanguage,
   'sv': messagesOfSvLanguage,
-  'sq': messagesOfSqLanguage,
   'ru': messagesOfRuLanguage,
   'pt-pt': messagesOfPtPtLanguage,
   'pt-br': messagesOfPtBrLanguage,
+  'pl': messagesOfPlLanguage,
   'lv': messagesOfLvLanguage,
   'ja': messagesOfJaLanguage,
   'it-it': messagesOfItItLanguage,
@@ -62,7 +61,6 @@ export default {
   'hi': messagesOfHiLanguage,
   'he': messagesOfHeLanguage,
   'fr-ca': messagesOfFrCaLanguage,
-  'fr': messagesOfFrLanguage,
   'fa': messagesOfFaLanguage,
   'es-es': messagesOfEsEsLanguage,
   'es-419': messagesOfEs419Language,
