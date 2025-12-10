@@ -1,26 +1,8 @@
 import { DIRECT_PLUGIN, PLUGIN_OPERATIONS } from '@openedx/frontend-plugin-framework';
 
 const config = {
+  
   pluginSlots: {
-//     'org.openedx.frontend.layout.header_logo.v1': {
-//   keepDefault: false,
-//   plugins: [
-//     {
-//       op: PLUGIN_OPERATIONS.Insert,
-//       widget: {
-//         id: 'custom_logo_component',
-//         type: DIRECT_PLUGIN,
-//         RenderWidget: () => (
-//           <img 
-//             src="https://raw.githubusercontent.com/jakubklnask/openedx-nask-static-assets/refs/heads/nask-custom/CyberSzkolenia_logotypy_RGB_KOLOR.svg" 
-//             alt="NASK" 
-//             style={{height: '200px', width: 'auto'}} 
-//           />
-//         ),
-//       },
-//     },
-//   ]
-// },
     'org.openedx.frontend.layout.footer.v1': {
       plugins: [
         { op: PLUGIN_OPERATIONS.Hide, widgetId: 'default_contents' },
